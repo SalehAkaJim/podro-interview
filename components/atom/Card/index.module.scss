@@ -1,0 +1,17 @@
+@import '@/styles/utils/vars';
+
+.card {
+  background-color: $background-surface;
+  width: 100%;
+  border-radius: $radius-16;
+  border: 1px solid #eaecf0;
+  padding: 42px 16px;
+
+  &__lg {
+    max-width: 906px;
+  }
+
+  &__sm {
+    max-width: 375px;
+  }
+}

@@ -5,7 +5,8 @@ body {
   background-color: $background-primary;
   font-size: 16px;
   color: $main;
-  padding: 20px 0;
+  padding: 40px 16px;
+  direction: rtl;
 }
 
 * {
@@ -18,7 +19,14 @@ body {
   height: 100%;
 }
 
-section {
-  width: 100%;
-  height: 100%;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
