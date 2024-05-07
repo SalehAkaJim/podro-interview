@@ -1,41 +1,17 @@
-$oklch: 0.005 271;
-$radius-main: 24px;
 $radius-16: 16px;
-$radius-12: 12px;
 $radius-8: 8px;
 
-$black-900: oklch(10% $oklch);
-$black-800: oklch(20% $oklch);
-$black-700: oklch(30% $oklch);
-$black-600: oklch(40% $oklch);
-$black-500: oklch(50% $oklch);
-$black-400: oklch(60% $oklch);
-$black-300: oklch(70% $oklch);
-$black-200: oklch(80% $oklch);
-$black-100: oklch(90% $oklch);
-$black-50: oklch(95% $oklch);
-$black-10: oklch(100% $oklch);
+$white: #fff;
 
-$status-success: oklch(68.44% 0.137 168);
-$white: oklch(100% 0 0);
+$background-primary: #fafafa;
+$background-surface: #fff;
 
-$background-primary: $black-10;
-$background-surface: $black-100;
-$background-other: $black-200;
+$text-900: #313235;
+$text-800: #7e838f;
+$text-10: #fff;
 
-$text-900: $black-900;
-$text-800: $black-800;
-$text-700: $black-700;
-$text-600: $black-600;
-$text-500: $black-500;
-$text-10: $black-10;
+$border: #eaecf0;
+$icon: #313235;
+$disable: #7e838f;
 
-$border: $black-100;
-$icon: $black-500;
-$disable: $black-400;
-
-$main: linear-gradient(
-  256deg,
-  oklch(41.82% 0.168 261.91) 0%,
-  oklch(34.08% 0.134 262.23) 100%
-);
+$main: linear-gradient(256deg, #1043a6 0%, #0c317c 100%);
