@@ -1,0 +1,56 @@
+@import '@/styles/utils/vars';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: $radius-12;
+  border: none;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  transform: scale(1);
+  -webkit-transition:
+    box-shadow 0.1s ease-out,
+    -webkit-transform 0.1s ease-out,
+    transform 0.1s ease-out;
+  -moz-transition:
+    box-shadow 0.1s ease-out,
+    transform 0.1s ease-out;
+  transition:
+    box-shadow 0.1s ease-out,
+    -ms-transform 0.1s ease-out,
+    -webkit-transform 0.1s ease-out,
+    transform 0.1s ease-out;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.1s ease-in-out;
+  width: fit-content;
+
+  &:hover {
+    -webkit-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    transform: scale(0.96);
+    opacity: 0.9;
+  }
+}
+
+.primary {
+  background: $main;
+  color: $white;
+}
+
+.icon {
+  width: 52px;
+  background-color: $white;
+  color: $main;
+  border: 1px solid $main;
+}
+
+.fullWidth {
+  width: 100%;
+}

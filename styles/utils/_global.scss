@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-primary;
+  font-size: 16px;
+  color: $main;
+  padding: 20px 0;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.displayLarge {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 125%;
+  color: $text-900;
+}
+
+.displayMedium {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 125%;
+  color: $text-900;
+}
+
+.displaySmall {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 125%;
+  color: $text-900;
+}
+
+.headlineLarge {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: $text-900;
+}
+
+.headlineMedium {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: $text-900;
+}
+
+.headlineSmall {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: $text-900;
+}
+
+.titleLarge {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: $text-800;
+}
+
+.titleMedium {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: $text-800;
+}
+
+.titleSmall {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: $text-800;
+}
+
+.bodyLarge {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-800;
+}
+
+.bodyMedium {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-800;
+}
+
+.bodySmall {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-800;
+}
+
+.bodyExtraSmall {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: $text-800;
+}
+
+.labelLarge {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: $text-700;
+}
+
+.labelMedium {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: $text-700;
+}
+
+.labelSmall {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: $text-700;
+}
+
+.labelExtraSmall {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: $text-700;
+}
