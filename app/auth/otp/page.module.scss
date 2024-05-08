@@ -1,10 +1,5 @@
 @import '@/styles/utils/vars';
 
-.main {
-  width: 100%;
-  height: 100%;
-}
-
 .login {
   display: flex;
   justify-content: center;
@@ -54,6 +49,12 @@
         font-weight: 400;
         color: $text-800;
       }
+
+      &_link {
+        font-size: 14px;
+        font-weight: 400;
+        color: #1043a6;
+      }
     }
 
     &_register {
@@ -71,8 +72,21 @@
       &_link {
         font-size: 14px;
         font-weight: 400;
-        color: $main;
+        color: #1043a6;
+
+        &_disable {
+          color: $disable;
+        }
       }
     }
   }
+}
+
+.error {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+
+  color: #d23535;
 }

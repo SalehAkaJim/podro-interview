@@ -19,4 +19,23 @@
     border: 1px solid #0c317c;
     outline: unset;
   }
+
+  &__error {
+    border: 1px solid #d23535;
+
+    &:focus-visible,
+    &:focus {
+      border: 1px solid #d23535;
+      outline: unset;
+    }
+  }
+}
+
+.error {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 8px;
+
+  color: #d23535;
 }

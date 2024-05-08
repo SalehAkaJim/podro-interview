@@ -15,7 +15,6 @@
   padding-right: 16px;
   border-radius: $radius-8;
   border: none;
-  cursor: pointer;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   transform: scale(1);
@@ -33,6 +32,12 @@
     transform 0.1s ease-out;
   -webkit-tap-highlight-color: transparent;
   transition: all 0.1s ease-in-out;
+}
+
+.primary {
+  background: $main;
+  color: $white;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.9;
@@ -45,8 +50,8 @@
   }
 }
 
-.primary {
-  background: $main;
+.disabled {
+  background: $disable;
   color: $white;
 }
 
@@ -58,8 +63,24 @@
   background-color: $white;
   color: $main;
   border: 1px solid $main;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98);
+  }
 }
 
 .fullWidth {
   width: 100%;
+}
+
+.error {
+  outline: 2px solid #d23535;
+  outline-offset: 3px;
 }

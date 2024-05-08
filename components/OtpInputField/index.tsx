@@ -1,13 +1,13 @@
 'use client'
-import { useState } from 'react'
 import styles from './index.module.scss'
 import OtpInput from 'react-otp-input'
 
-interface Props {}
+interface Props {
+  otp: string
+  setOtp: any
+}
 
-export const OtpInputField = ({}: Props) => {
-  const [otp, setOtp] = useState('')
-
+export const OtpInputField = ({ otp, setOtp }: Props) => {
   return (
     <OtpInput
       containerStyle={{
