@@ -10,20 +10,21 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3",
+    "react-otp-input": "^3.1.1",
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
-    "prettier": "3.1.1"
+    "prettier": "3.1.1",
+    "typescript": "^5"
   }
 }

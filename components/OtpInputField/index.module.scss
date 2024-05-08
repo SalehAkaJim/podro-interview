@@ -1,0 +1,24 @@
+@import '@/styles/utils/vars';
+
+.input {
+  flex-grow: 1;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #eaecf0;
+  border-radius: $radius-8;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: $text-900;
+  text-align: center;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.05s ease-in-out;
+
+  &:focus-visible,
+  &:focus {
+    border: 1px solid #0c317c;
+    outline: unset;
+  }
+}

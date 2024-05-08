@@ -1,7 +1,8 @@
 import { Card } from '@/components/Card'
 import styles from './page.module.scss'
-import { MobileInput } from '@/components/MobileInput'
 import { Button } from '@/components/Button'
+import IconArrowLeft from '@/components/Icons/IconArrowLeft'
+import { OtpInputField } from '@/components/OtpInputField'
 import Link from 'next/link'
 
 export default function Page() {
@@ -16,32 +17,36 @@ export default function Page() {
                 src='/logo/LogoType.png'
                 alt='Podro Logo'
               />
+
+              <Button variant='icon' icon={<IconArrowLeft />}></Button>
             </div>
 
             <div className={styles.login__card_content}>
               <h2 className={styles.login__card_content_title}>
-                به پنل مدیریت تسک پادرو خوش آمدید
+                کد تایید را وارد کنید
               </h2>
 
               <p className={styles.login__card_content_desc}>
-                برای ورود، لطفا شماره موبایل خود را وارد کنید
+                کد تایید برای شماره {'091-------'} پیامک شد
               </p>
             </div>
 
-            <div className={styles.login__card_mobile}>
-              <MobileInput />
-
-              <Button fullWidth text='ارسال کد تایید' />
+            <div dir='ltr'>
+              <OtpInputField />
             </div>
 
             <div className={styles.login__card_register}>
               <p className={styles.login__card_register_text}>
-                حساب کاربری ندارید؟
+                کد را دریافت نکردید؟
               </p>
 
               <Link href='#' className={styles.login__card_register_link}>
-                ثبت‌نام
+                ارسال مجدد
               </Link>
+            </div>
+
+            <div>
+              <Button fullWidth text='تایید' />
             </div>
           </div>
         </Card>
