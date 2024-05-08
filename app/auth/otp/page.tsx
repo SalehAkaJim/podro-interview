@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useAuthStore } from '@/store/useAuthStore'
 import clsx from 'clsx'
+import { setCookie } from '@/helper/helperCookie'
 
 export default function Page() {
   const [otp, setOtp] = useState('')
@@ -22,6 +23,8 @@ export default function Page() {
   const handleSubmit = () => {
     if (otp === '1111') {
       setIsError(false)
+      setCookie('token', 'Something', 2)
+      router.push('/')
     } else {
       setIsError(true)
     }

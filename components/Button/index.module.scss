@@ -34,7 +34,8 @@
   transition: all 0.1s ease-in-out;
 }
 
-.primary {
+.primary,
+.primary-icon {
   background: $main;
   color: $white;
   cursor: pointer;

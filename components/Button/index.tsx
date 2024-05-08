@@ -3,11 +3,12 @@ import { clsx } from 'clsx'
 
 interface Props {
   text?: string
-  variant?: 'primary' | 'icon' | 'disabled'
+  variant?: 'primary' | 'icon' | 'disabled' | 'primary-icon'
   fullWidth?: boolean
   icon?: React.ReactElement
   onClick?: () => void
   error?: boolean
+  sx?: any
 }
 
 export const Button = ({
@@ -16,7 +17,8 @@ export const Button = ({
   fullWidth = false,
   icon,
   onClick,
-  error
+  error,
+  sx = {}
 }: Props) => {
   return (
     <button
@@ -25,6 +27,7 @@ export const Button = ({
         [styles.fullWidth]: fullWidth,
         [styles.error]: error
       })}
+      style={sx}
       onClick={onClick}
       disabled={variant === 'disabled'}
     >

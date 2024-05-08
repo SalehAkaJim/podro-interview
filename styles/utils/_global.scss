@@ -5,7 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $background-primary;
   font-size: 16px;
-  padding: 40px 16px;
   direction: rtl;
 }
 
@@ -25,6 +24,7 @@ main {
   display: flex;
   flex-grow: 1;
   align-items: center;
+  padding: 40px 16px;
 }
 
 * {
