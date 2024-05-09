@@ -1,0 +1,57 @@
+@import '@/styles/utils/vars';
+
+.info {
+  display: flex;
+  height: max-content;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  background-color: #f6f7f9;
+  border-radius: 12px;
+  padding: 16px;
+
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      direction: ltr;
+
+      &__data {
+        display: flex;
+        gap: 8px;
+
+        &_label {
+          font-size: 16px;
+          font-weight: 400;
+          color: $text-800;
+        }
+
+        &_content {
+          font-size: 16px;
+          font-weight: 500;
+          color: $text-900;
+        }
+      }
+    }
+  }
+
+  &__right {
+    &_image {
+      width: 160px;
+      height: 100%;
+      max-height: 140px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #eaecf0;
+    }
+  }
+}

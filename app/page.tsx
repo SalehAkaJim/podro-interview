@@ -1,6 +1,8 @@
 import { Card } from '@/components/Card'
 import styles from './page.module.scss'
 import { SearchInput } from '@/components/SearchInput'
+import { Information } from '@/components/Information'
+import { apiRef } from './(home)/_api/ApiRef'
 
 export default function Page() {
   return (
@@ -25,7 +27,11 @@ export default function Page() {
             </div>
 
             <div>
-              <SearchInput />
+              <SearchInput apiRef={apiRef} />
+            </div>
+
+            <div className={styles.search__informations}>
+              <Information />
             </div>
           </Card>
         </section>

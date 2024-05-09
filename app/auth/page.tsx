@@ -18,9 +18,9 @@ export default function Page() {
     e.preventDefault()
     const regex = /^((98|\+98|0098|0)*(9)[0-9]{9})+$/
 
-    if (mobile && regex.test(mobile)) {
+    if (mobile && regex.test(mobile.trim())) {
       setIsError(false)
-      authStore.setMobile(mobile)
+      authStore.setMobile(mobile.trim())
 
       router.push('/auth/otp')
     } else {

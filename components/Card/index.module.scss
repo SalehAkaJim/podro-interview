@@ -6,6 +6,12 @@
   border-radius: $radius-16;
   border: 1px solid #eaecf0;
   padding: 42px 16px;
+  box-shadow:
+    -134px 220px 72px 0px rgba(207, 207, 207, 0),
+    -85px 141px 66px 0px rgba(207, 207, 207, 0.01),
+    -48px 79px 56px 0px rgba(207, 207, 207, 0.05),
+    -21px 35px 41px 0px rgba(207, 207, 207, 0.09),
+    -5px 9px 23px 0px rgba(207, 207, 207, 0.08);
 
   &__lg {
     max-width: 906px;

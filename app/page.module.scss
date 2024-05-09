@@ -41,4 +41,10 @@
       line-height: 28px;
     }
   }
+
+  &__informations {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 }
